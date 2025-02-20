@@ -7,11 +7,10 @@ namespace api_filmes_senai.Domains
     public class Genero
     {
         [Key]
-
         public Guid IdGenero { get; set; }
 
         [Column(TypeName = "VARCHAR(30)")]
         [Required(ErrorMessage = "Nome do Gênero e obrigatório!")]
-        public string ? Nome { get; set; }
+        public string? Nome { get; set; }
     }
 }

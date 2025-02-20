@@ -13,7 +13,7 @@ namespace api_filmes_senai.Domains
 
         [Column(TypeName = "VARCHAR(50)")]
         [Required(ErrorMessage = "O nome do Filme e obrigatório!")]
-        public string ? Titulo { get; set; }
+        public string? Titulo { get; set; }
 
         /// <summary>
         /// Refência da tabela Gênero
@@ -21,7 +21,7 @@ namespace api_filmes_senai.Domains
         public Guid IdGenero { get; set; }
 
         [ForeignKey("IdGenero")]
-        public Genero ? Genero { get; set; }
+        public Genero? Genero { get; set; }
 
     }
 }
